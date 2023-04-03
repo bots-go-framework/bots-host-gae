@@ -111,7 +111,7 @@ func (s *GaeBotChatStore) SaveBotChat(c context.Context, botID, botChatID string
 }
 
 // NewBotChatEntity creates new bot chat entity
-func (s *GaeBotChatStore) NewBotChatEntity(c context.Context, botID string, botChat botsfw.WebhookChat, appUserID int64, botUserID string, isAccessGranted bool) botsfw.BotChat {
+func (s *GaeBotChatStore) NewBotChatEntity(c context.Context, botID string, botChat botsfw.WebhookChat, appUserID string, botUserID string, isAccessGranted bool) botsfw.BotChat {
 	botChatID := botChat.GetID()
 	log.Debugf(c, "NewBotChatEntity(botID=%v, botChatID=%v, appUserID=%v, botUserID=%v, isAccessGranted=%v)", botID, botChatID, appUserID, botUserID, isAccessGranted)
 	botChatEntity := s.newBotChatEntity()
@@ -120,7 +120,11 @@ func (s *GaeBotChatStore) NewBotChatEntity(c context.Context, botID string, botC
 	if botChat.IsGroupChat() {
 		botChatEntity.SetIsGroupChat(true)
 	} else {
-		botChatEntity.SetAppUserIntID(appUserID)
+		if appUserIntID, err := strconv.ParseInt(appUserID, 10, 64); err == nil { // TODO: change to STRING APP USER ID
+			panic(fmt.Sprintf("appUserID is not valid int64: %s", appUserID))
+		} else {
+			botChatEntity.SetAppUserIntID(appUserIntID)
+		}
 		botChatEntity.SetBotUserID(botUserID)
 	}
 
