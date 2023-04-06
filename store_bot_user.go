@@ -3,7 +3,7 @@ package gae
 import (
 	"context"
 	"fmt"
-	"github.com/strongo/bots-framework/botsfw"
+	"github.com/bots-go-framework/bots-fw/botsfw"
 	"github.com/strongo/log"
 	"github.com/strongo/nds"
 	"google.golang.org/appengine/datastore"

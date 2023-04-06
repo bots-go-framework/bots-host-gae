@@ -2,8 +2,8 @@ package gae
 
 import (
 	"context"
-	"github.com/strongo/bots-framework/botsfw"
-	"github.com/strongo/dalgo/dal"
+	"github.com/bots-go-framework/bots-fw/botsfw"
+	"github.com/dal-go/dalgo/dal"
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/urlfetch"
 	"net/http"
@@ -64,5 +64,5 @@ func (h GaeBotHost) GetBotCoreStores(platform string, appContext botsfw.BotAppCo
 	default:
 		panic("Unknown platform: " + platform)
 	}
-	return
+	//return
 }
