@@ -18,6 +18,8 @@ github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDk
 github.com/cncf/udpa/go v0.0.0-20191209042840-269d4d468f6f/go.mod h1:M8M6+tZqaGXZJjfX53e64911xZQV5JYwmTeXPW+k8Sc=
 github.com/dal-go/dalgo v0.2.3 h1:n5B7kPf6YZn0gu1SP79USFMDB0BmuxhWLgI690lO7Ks=
 github.com/dal-go/dalgo v0.2.3/go.mod h1:Fv3s/hxtByMVY7PSOi6SJ/5B981kNCuKGBa5O0xHCnM=
+github.com/dal-go/dalgo v0.2.4 h1:qlktKGErF24OeNptMWpQxz+jz7wL005KvPXPl6JptV8=
+github.com/dal-go/dalgo v0.2.4/go.mod h1:b0U+y2xjE5xY+HJ+vAt1DDcJe32N98tbRWDp5tPTwIc=
 github.com/dal-go/dalgo2datastore v0.0.3 h1:e1JGRZywSUnivfo15ySZ5PY3SL09I4PwX5bp5rJZY9c=
 github.com/dal-go/dalgo2datastore v0.0.3/go.mod h1:eqg1R89vUE4G9rZ/JUohM8zoKnUAhZdUSO6dLQj541U=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
