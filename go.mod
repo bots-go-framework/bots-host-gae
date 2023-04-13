@@ -8,7 +8,7 @@ require (
 	github.com/dal-go/dalgo v0.2.5
 	github.com/dal-go/dalgo2datastore v0.0.3
 	github.com/strongo/log v0.0.1
-	google.golang.org/appengine/v2 v2.0.2
+	google.golang.org/appengine/v2 v2.0.3
 )
 
 require (
