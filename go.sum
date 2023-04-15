@@ -11,8 +11,8 @@ cloud.google.com/go/datastore v1.11.0/go.mod h1:TvGxBIHCS50u8jzG+AW/ppf87v1of8nw
 cloud.google.com/go/longrunning v0.4.1 h1:v+yFJOfKC3yZdY6ZUI933pIYdhyhV8S3NpWrXWmg7jM=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
-github.com/bots-go-framework/bots-fw v0.9.10 h1:OKXf7bSc47rsa0l9Izb+qgvsajXbOmgSzoY6CyTaWIE=
-github.com/bots-go-framework/bots-fw v0.9.10/go.mod h1:2XxS/he3tJ56rSy1ckMYOKRQ7rLV0orh5CoYGTD0Rw4=
+github.com/bots-go-framework/bots-fw v0.9.11 h1:7OrRWGrbtePRuSpH6UXarW192bJxMX+NdWUeF77YsCM=
+github.com/bots-go-framework/bots-fw v0.9.11/go.mod h1:ibCZOPmi+1egOgHzpH+QiCG5GXemsXdCzFthPmU9J2s=
 github.com/bots-go-framework/bots-fw-dalgo v0.0.5 h1:/dZgDebCPf7wG6LNoSzD8hgkgaQEQ6mO+ejrDqOWmy0=
 github.com/bots-go-framework/bots-fw-dalgo v0.0.5/go.mod h1:9c2LME3Daoq+MEsbNSoq0Hn66TJj5BDhYG/sfDI8CoM=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
@@ -95,8 +95,8 @@ github.com/stretchr/testify v1.7.1/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/stretchr/testify v1.8.0/go.mod h1:yNjHg4UonilssWZ8iaSj1OCr/vHnekPRkoO+kdMU+MU=
 github.com/stretchr/testify v1.8.1/go.mod h1:w2LPCIKwWwSfY2zedu0+kehJoqGctiVI29o6fzry7u4=
 github.com/stretchr/testify v1.8.2 h1:+h33VjcLVPDHtOdpUCuF+7gSuG3yGIftsP1YvFihtJ8=
-github.com/strongo/app v0.0.2 h1:BBM+U9v4pfIeLmHiC3hAeJewjbBOqBqiOmbT9K3dQas=
-github.com/strongo/app v0.0.2/go.mod h1:CVpVW5I9Hat8LNcN42Bvlzv8+mZRsNQ2ZQHLH1mz8Qw=
+github.com/strongo/app v0.0.5 h1:C1PHq40KN5rgS3MaHptBn2A1I5gDQ3GEf165aRQrTno=
+github.com/strongo/app v0.0.5/go.mod h1:m0dy7TduD9JuWndwUMQUaOcfBjI63TAqrpQnSVGo/fA=
 github.com/strongo/emoji v0.0.1 h1:0Zev257CEmTVSyMiAovjqtgP+JKclp2e1c2V/jfVqwc=
 github.com/strongo/emoji v0.0.1/go.mod h1:aawHc+8HqsTyoNQj2DknYL/jVp2WQ1GCJgPrJz6MD8w=
 github.com/strongo/gamp v0.0.1 h1:b6vzHUzNvbPOhzPtIja1NqKf8GQqrJWjs2gninQPZac=
