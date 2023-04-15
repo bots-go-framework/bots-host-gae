@@ -6,8 +6,8 @@ import (
 	"github.com/bots-go-framework/bots-fw/botsfw"
 	"github.com/dal-go/dalgo/dal"
 	"github.com/dal-go/dalgo2datastore"
-	"google.golang.org/appengine/v2"
-	"google.golang.org/appengine/v2/urlfetch"
+	"google.golang.org/appengine"
+	"google.golang.org/appengine/urlfetch"
 	"net/http"
 )
 
