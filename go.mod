@@ -5,8 +5,8 @@ go 1.20
 require (
 	github.com/bots-go-framework/bots-fw v0.9.12
 	github.com/bots-go-framework/bots-fw-dalgo v0.0.5
-	github.com/dal-go/dalgo v0.2.23
-	github.com/dal-go/dalgo2datastore v0.0.10
+	github.com/dal-go/dalgo v0.2.26
+	github.com/dal-go/dalgo2datastore v0.0.11
 	github.com/strongo/log v0.0.1
 	google.golang.org/appengine v1.6.7
 )
