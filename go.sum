@@ -52,6 +52,8 @@ github.com/dal-go/dalgo2datastore v0.0.10 h1:dHP9e3sp3yx72cV9Hb+8Z9sxPul+DkyEfic
 github.com/dal-go/dalgo2datastore v0.0.10/go.mod h1:XPDBsE145cPd09+dffnLSVP4FuRj38pQqm5TF7edISs=
 github.com/dal-go/dalgo2datastore v0.0.11 h1:DgqlDCYCucVgBfvCJ6/poS33ic4/oVrrgoXPJw+Ip9o=
 github.com/dal-go/dalgo2datastore v0.0.11/go.mod h1:ezVwKILuvw35i1gqaLdjgbLKe4i7S1P9FpXBDwjVOdI=
+github.com/dal-go/dalgo2datastore v0.0.12 h1:TpEHSkovimQWkZ6Ou7Gp7nP1uvmeAOTxBEdLp4qCw4I=
+github.com/dal-go/dalgo2datastore v0.0.12/go.mod h1:/KCgfacVJNtFdtjtAPjFiUxd0UzNzJgGYZd2c/Txbn8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
