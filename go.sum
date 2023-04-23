@@ -13,8 +13,12 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/bots-go-framework/bots-fw v0.9.12 h1:1DS+KuBeSkfDvxIuXptb3lobL6JRjpufDj7ppQyGxqs=
 github.com/bots-go-framework/bots-fw v0.9.12/go.mod h1:ztSulaclOOCAChPPkzZmeywYLnDQ2RTfOpmvH0FhCy0=
+github.com/bots-go-framework/bots-fw v0.10.0 h1:aJBOrkqK/7dwhXnVVVbXd12YqYCZWavdOzmurC7Gk0o=
+github.com/bots-go-framework/bots-fw v0.10.0/go.mod h1:p4Vmy+OHQ7yiNRD/VjrOrTqPy7i8LImRiB7z/I+EDY8=
 github.com/bots-go-framework/bots-fw-dalgo v0.0.5 h1:/dZgDebCPf7wG6LNoSzD8hgkgaQEQ6mO+ejrDqOWmy0=
 github.com/bots-go-framework/bots-fw-dalgo v0.0.5/go.mod h1:9c2LME3Daoq+MEsbNSoq0Hn66TJj5BDhYG/sfDI8CoM=
+github.com/bots-go-framework/bots-go-core v0.0.1 h1:Br7j+Ir3R6U8x1mnFZFq1G1K0bupJhLvdF8TIqI/7i8=
+github.com/bots-go-framework/bots-go-core v0.0.1/go.mod h1:txRZn1MlcJEiCUra3bQtpkt9IM2EFGaeUvqS1VLyl30=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/cespare/xxhash/v2 v2.1.1/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=

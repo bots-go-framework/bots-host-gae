@@ -3,7 +3,7 @@ module github.com/bots-go-framework/bots-host-gae
 go 1.20
 
 require (
-	github.com/bots-go-framework/bots-fw v0.9.12
+	github.com/bots-go-framework/bots-fw v0.10.0
 	github.com/bots-go-framework/bots-fw-dalgo v0.0.5
 	github.com/dal-go/dalgo v0.2.26
 	github.com/dal-go/dalgo2datastore v0.0.12
@@ -16,6 +16,7 @@ require (
 	cloud.google.com/go/compute v1.19.1 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
 	cloud.google.com/go/datastore v1.11.0 // indirect
+	github.com/bots-go-framework/bots-go-core v0.0.1 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/go-cmp v0.5.9 // indirect
