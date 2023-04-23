@@ -8,7 +8,6 @@ import (
 	"github.com/dal-go/dalgo/dal"
 	"github.com/dal-go/dalgo2datastore"
 	"google.golang.org/appengine"
-	"google.golang.org/appengine/urlfetch"
 	"net/http"
 )
 
@@ -25,7 +24,10 @@ func BotHost() botsfw.BotHost {
 
 // Context creates context for http.Request
 func (h botHost) Context(r *http.Request) context.Context {
-	return appengine.NewContext(r)
+	//var appengine
+	//return r.Context()
+	var ctx = appengine.NewContext(r)
+	return ctx
 }
 
 // GetHTTPClient creates an HTTP client using AppEngine's URL fetch
@@ -33,11 +35,13 @@ func (h botHost) GetHTTPClient(c context.Context) *http.Client {
 	if c == nil {
 		panic("c == nil")
 	}
-	return &http.Client{
-		Transport: &urlfetch.Transport{
-			Context: c,
-		},
-	}
+	return http.DefaultClient
+	//return urlfetch.Client(c)
+	//return &http.Client{
+	//	Transport: &urlfetch.Transport{
+	//		Context: c,
+	//	},
+	//}
 }
 
 var DbProvider = func(c context.Context) (db dal.Database, err error) {
