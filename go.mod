@@ -7,7 +7,7 @@ go 1.20
 //replace github.com/bots-go-framework/bots-fw-store => ../../bots-go-framework/bots-fw-store
 
 require (
-	github.com/bots-go-framework/bots-fw v0.16.1
+	github.com/bots-go-framework/bots-fw v0.16.2
 	github.com/dal-go/dalgo v0.2.28
 	github.com/dal-go/dalgo2datastore v0.0.12
 	github.com/strongo/log v0.3.0
@@ -19,7 +19,7 @@ require (
 	cloud.google.com/go/compute v1.19.2 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
 	cloud.google.com/go/datastore v1.11.0 // indirect
-	github.com/bots-go-framework/bots-fw-store v0.0.4 // indirect
+	github.com/bots-go-framework/bots-fw-store v0.0.5 // indirect
 	github.com/bots-go-framework/bots-go-core v0.0.1 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
@@ -32,6 +32,7 @@ require (
 	github.com/strongo/gamp v0.0.1 // indirect
 	github.com/strongo/i18n v0.0.4 // indirect
 	github.com/strongo/random v0.0.1 // indirect
+	github.com/strongo/validation v0.0.1 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/crypto v0.9.0 // indirect
 	golang.org/x/net v0.10.0 // indirect
