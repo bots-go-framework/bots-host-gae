@@ -7,8 +7,8 @@ go 1.20
 //replace github.com/bots-go-framework/bots-fw-store => ../../bots-go-framework/bots-fw-store
 
 require (
-	github.com/bots-go-framework/bots-fw v0.16.12
-	github.com/dal-go/dalgo v0.2.30
+	github.com/bots-go-framework/bots-fw v0.17.2
+	github.com/dal-go/dalgo v0.2.31
 	github.com/dal-go/dalgo2datastore v0.0.12
 	github.com/strongo/log v0.3.0
 	google.golang.org/appengine v1.6.7
@@ -28,11 +28,11 @@ require (
 	github.com/googleapis/enterprise-certificate-proxy v0.2.3 // indirect
 	github.com/googleapis/gax-go/v2 v2.8.0 // indirect
 	github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7 // indirect
-	github.com/strongo/app v0.5.5 // indirect
+	github.com/strongo/app v0.5.7 // indirect
 	github.com/strongo/gamp v0.0.1 // indirect
 	github.com/strongo/i18n v0.0.4 // indirect
 	github.com/strongo/random v0.0.1 // indirect
-	github.com/strongo/validation v0.0.1 // indirect
+	github.com/strongo/validation v0.0.5 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/crypto v0.9.0 // indirect
 	golang.org/x/net v0.10.0 // indirect
