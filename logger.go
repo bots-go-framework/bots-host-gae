@@ -3,7 +3,7 @@ package gae
 import (
 	"context"
 	"github.com/strongo/log"
-	logGae "google.golang.org/appengine/log"
+	logGae "google.golang.org/appengine/v2/log"
 )
 
 type logger struct{}
