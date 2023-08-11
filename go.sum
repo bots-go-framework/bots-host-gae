@@ -19,6 +19,8 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/bots-go-framework/bots-fw v0.17.2 h1:/qSAl3+SPxnRAQbycEN5nvdAsC01tqgLRYaVjxHgdag=
 github.com/bots-go-framework/bots-fw v0.17.2/go.mod h1:UXHnomSLrzphczDC/MA/tuX6v+QReBCVCbp8bT8eA/k=
+github.com/bots-go-framework/bots-fw v0.17.3 h1:1COEVdXTasG06CNzpfddTx8Eoprh7uk16yQUn/r/UFk=
+github.com/bots-go-framework/bots-fw v0.17.3/go.mod h1:UXHnomSLrzphczDC/MA/tuX6v+QReBCVCbp8bT8eA/k=
 github.com/bots-go-framework/bots-fw-store v0.0.7 h1:Prq99VAJWtVkgLkwXtvMQIg0dsi3XQWoFmWRqBj4j5k=
 github.com/bots-go-framework/bots-fw-store v0.0.7/go.mod h1:XkLKnHugQ98Wr5VIlw2YuRYJNMcqqYDDw/j47plxmBY=
 github.com/bots-go-framework/bots-go-core v0.0.1 h1:Br7j+Ir3R6U8x1mnFZFq1G1K0bupJhLvdF8TIqI/7i8=
