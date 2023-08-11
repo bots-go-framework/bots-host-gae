@@ -7,7 +7,7 @@ go 1.20
 //replace github.com/bots-go-framework/bots-fw-store => ../../bots-go-framework/bots-fw-store
 
 require (
-	github.com/bots-go-framework/bots-fw v0.17.2
+	github.com/bots-go-framework/bots-fw v0.17.3
 	github.com/dal-go/dalgo v0.2.31
 	github.com/dal-go/dalgo2datastore v0.0.13
 	github.com/strongo/log v0.3.0
