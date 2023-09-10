@@ -43,12 +43,12 @@ func (h botHost) GetHTTPClient(c context.Context) *http.Client {
 	//}
 }
 
-var DbProvider = func(c context.Context) (db dal.Database, err error) {
+var DbProvider = func(c context.Context) (db dal.DB, err error) {
 	return dalgo2datastore.NewDatabase(c, "")
 }
 
 // DB returns database instance
-func (h botHost) DB(c context.Context) (db dal.Database, err error) {
+func (h botHost) DB(c context.Context) (db dal.DB, err error) {
 	if DbProvider == nil {
 		return nil, errors.New("variable DbProvider is not set in github.com/bots-go-framework/bots-host-gae")
 	}
