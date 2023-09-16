@@ -7,9 +7,9 @@ go 1.20
 //replace github.com/bots-go-framework/bots-fw-store => ../../bots-go-framework/bots-fw-store
 
 require (
-	github.com/bots-go-framework/bots-fw v0.21.3
-	github.com/dal-go/dalgo v0.10.1
-	github.com/dal-go/dalgo2datastore v0.0.17
+	github.com/bots-go-framework/bots-fw v0.21.4
+	github.com/dal-go/dalgo v0.10.2
+	github.com/dal-go/dalgo2datastore v0.0.20
 	github.com/strongo/log v0.3.0
 	google.golang.org/appengine/v2 v2.0.5
 )
@@ -41,7 +41,7 @@ require (
 	golang.org/x/sys v0.12.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
-	google.golang.org/api v0.140.0 // indirect
+	google.golang.org/api v0.141.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/genproto v0.0.0-20230822172742-b8732ec3820d // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20230822172742-b8732ec3820d // indirect
