@@ -9,7 +9,7 @@ go 1.20
 require (
 	github.com/bots-go-framework/bots-fw v0.21.5
 	github.com/dal-go/dalgo v0.12.0
-	github.com/dal-go/dalgo2datastore v0.0.27
+	github.com/dal-go/dalgo2datastore v0.0.28
 	github.com/strongo/log v0.3.0
 	google.golang.org/appengine/v2 v2.0.5
 )
@@ -41,7 +41,7 @@ require (
 	golang.org/x/sys v0.12.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
-	google.golang.org/api v0.145.0 // indirect
+	google.golang.org/api v0.146.0 // indirect
 	google.golang.org/appengine v1.6.8 // indirect
 	google.golang.org/genproto v0.0.0-20230913181813-007df8e322eb // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20230913181813-007df8e322eb // indirect
