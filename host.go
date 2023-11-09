@@ -5,7 +5,6 @@ import (
 	"errors"
 	"github.com/bots-go-framework/bots-fw/botsfw"
 	"github.com/dal-go/dalgo/dal"
-	"github.com/dal-go/dalgo2datastore"
 	"google.golang.org/appengine/v2"
 	"net/http"
 )
@@ -44,7 +43,8 @@ func (h botHost) GetHTTPClient(c context.Context) *http.Client {
 }
 
 var DbProvider = func(c context.Context) (db dal.DB, err error) {
-	return dalgo2datastore.NewDatabase(c, "")
+	panic("gae.DbProvider is not set")
+	//return dalgo2datastore.NewDatabase(c, "")
 }
 
 // DB returns database instance
