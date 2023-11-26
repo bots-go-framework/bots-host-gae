@@ -9,14 +9,14 @@ toolchain go1.21.4
 //replace github.com/bots-go-framework/bots-fw-store => ../../bots-go-framework/bots-fw-store
 
 require (
-	github.com/bots-go-framework/bots-fw v0.22.0
+	github.com/bots-go-framework/bots-fw v0.23.3
 	github.com/dal-go/dalgo v0.12.0
 	github.com/strongo/log v0.3.0
 	google.golang.org/appengine/v2 v2.0.5
 )
 
 require (
-	github.com/bots-go-framework/bots-fw-store v0.1.2 // indirect
+	github.com/bots-go-framework/bots-fw-store v0.4.0 // indirect
 	github.com/bots-go-framework/bots-go-core v0.0.2 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/go-cmp v0.6.0 // indirect
@@ -25,6 +25,7 @@ require (
 	github.com/strongo/gamp v0.0.1 // indirect
 	github.com/strongo/i18n v0.0.4 // indirect
 	github.com/strongo/random v0.0.1 // indirect
+	github.com/strongo/strongoapp v0.9.1 // indirect
 	github.com/strongo/validation v0.0.6 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
 )
