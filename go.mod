@@ -9,7 +9,7 @@ toolchain go1.21.4
 //replace github.com/bots-go-framework/bots-fw-store => ../../bots-go-framework/bots-fw-store
 
 require (
-	github.com/bots-go-framework/bots-fw v0.23.4
+	github.com/bots-go-framework/bots-fw v0.25.0
 	github.com/dal-go/dalgo v0.12.0
 	github.com/strongo/log v0.3.0
 	google.golang.org/appengine/v2 v2.0.5
