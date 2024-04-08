@@ -12,7 +12,7 @@ require (
 	github.com/bots-go-framework/bots-fw v0.25.2
 	github.com/dal-go/dalgo v0.12.1
 	github.com/strongo/log v0.3.0
-	google.golang.org/appengine/v2 v2.0.5
+	google.golang.org/appengine/v2 v2.0.6
 )
 
 require (
