@@ -2,7 +2,7 @@ module github.com/bots-go-framework/bots-host-gae
 
 go 1.21
 
-toolchain go1.22.2
+toolchain go1.22.3
 
 //replace github.com/bots-go-framework/bots-fw => ../../bots-go-framework/bots-fw
 //
