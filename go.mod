@@ -7,7 +7,7 @@ go 1.23.0
 //replace github.com/bots-go-framework/bots-fw-store => ../../bots-go-framework/bots-fw-store
 
 require (
-	github.com/bots-go-framework/bots-fw v0.31.8
+	github.com/bots-go-framework/bots-fw v0.32.0
 	github.com/dal-go/dalgo v0.12.2
 	google.golang.org/appengine/v2 v2.0.6
 )
