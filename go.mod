@@ -7,8 +7,8 @@ go 1.22.3
 //replace github.com/bots-go-framework/bots-fw-store => ../../bots-go-framework/bots-fw-store
 
 require (
-	github.com/bots-go-framework/bots-fw v0.38.2
-	github.com/dal-go/dalgo v0.13.1
+	github.com/bots-go-framework/bots-fw v0.40.1
+	github.com/dal-go/dalgo v0.13.2
 	google.golang.org/appengine/v2 v2.0.6
 )
 
@@ -19,7 +19,7 @@ require (
 	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/pquerna/ffjson v0.0.0-20190930134022-aa0246cd15f7 // indirect
 	github.com/strongo/gamp v0.0.1 // indirect
-	github.com/strongo/i18n v0.2.1 // indirect
+	github.com/strongo/i18n v0.6.1 // indirect
 	github.com/strongo/logus v0.2.0 // indirect
 	github.com/strongo/random v0.0.1 // indirect
 	github.com/strongo/validation v0.0.7 // indirect
