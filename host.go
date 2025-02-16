@@ -2,9 +2,6 @@ package gae
 
 import (
 	"context"
-	"errors"
-	"github.com/bots-go-framework/bots-fw/botsfw"
-	"github.com/dal-go/dalgo/dal"
 	"google.golang.org/appengine/v2"
 	"net/http"
 )
@@ -13,19 +10,26 @@ import (
 type botHost struct {
 }
 
-var _ botsfw.BotHost = (*botHost)(nil)
+//var _ botsfw.BotHost = (*botHost)(nil)
 
 // BotHost returns hosting platform settings & information
-func BotHost() botsfw.BotHost {
+func BotHost() interface {
+
+	// Context returns a context.Context for a request.
+	// We need this as some platforms (as Google App Engine Standard)
+	// require usage of a context with a specific wrapper
+	Context(r *http.Request) context.Context
+
+	// GetHTTPClient returns HTTP client for current host
+	// We need this as some platforms (as Google App Engine Standard) require setting http client in a specific way.
+	GetHTTPClient(c context.Context) *http.Client
+} {
 	return botHost{}
 }
 
 // Context creates context for http.Request
 func (h botHost) Context(r *http.Request) context.Context {
-	//var appengine
-	//return r.Context()
-	var ctx = appengine.NewContext(r)
-	return ctx
+	return appengine.NewContext(r)
 }
 
 // GetHTTPClient creates an HTTP client using AppEngine's URL fetch
@@ -42,18 +46,18 @@ func (h botHost) GetHTTPClient(c context.Context) *http.Client {
 	//}
 }
 
-var DbProvider = func(c context.Context) (db dal.DB, err error) {
-	panic("gae.DbProvider is not set")
-	//return dalgo2datastore.NewDatabase(c, "")
-}
+//var DbProvider = func(c context.Context) (db dal.DB, err error) {
+//	panic("gae.DbProvider is not set")
+//	//return dalgo2datastore.NewDatabase(c, "")
+//}
 
 // DB returns database instance
-func (h botHost) DB(c context.Context) (db dal.DB, err error) {
-	if DbProvider == nil {
-		return nil, errors.New("variable DbProvider is not set in github.com/bots-go-framework/bots-host-gae")
-	}
-	return DbProvider(c)
-}
+//func (h botHost) DB(c context.Context) (db dal.DB, err error) {
+//	if DbProvider == nil {
+//		return nil, errors.New("variable DbProvider is not set in github.com/bots-go-framework/bots-host-gae")
+//	}
+//	return DbProvider(c)
+//}
 
 // GetBotCoreStores returns bot DAL
 //func (h botHost) GetBotCoreStores(platform string, appContext botsfw.BotAppContext, r *http.Request) (stores botsfwdal.DataAccess) {
