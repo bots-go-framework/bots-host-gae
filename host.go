@@ -6,14 +6,11 @@ import (
 	"net/http"
 )
 
-// botHost represent information on current hosting platform
-type botHost struct {
-}
-
-//var _ botsfw.BotHost = (*botHost)(nil)
-
-// BotHost returns hosting platform settings & information
-func BotHost() interface {
+// botHostInterface is the shape returned by BotHost and BotHostWithHTTPClient.
+// It intentionally mirrors github.com/bots-go-framework/bots-fw's botsfw.BotHost
+// interface without importing that module, so this package keeps its single
+// real dependency (google.golang.org/appengine/v2).
+type botHostInterface interface {
 
 	// Context returns a context.Context for a request.
 	// We need this as some platforms (as Google App Engine Standard)
@@ -23,7 +20,19 @@ func BotHost() interface {
 	// GetHTTPClient returns HTTP client for current host
 	// We need this as some platforms (as Google App Engine Standard) require setting http client in a specific way.
 	GetHTTPClient(c context.Context) *http.Client
-} {
+}
+
+// botHost represent information on current hosting platform
+type botHost struct {
+}
+
+//var _ botsfw.BotHost = (*botHost)(nil)
+
+// BotHost returns hosting platform settings & information. Its GetHTTPClient
+// always returns http.DefaultClient; use BotHostWithHTTPClient when a caller
+// needs to control outbound HTTP (e.g. to redirect Bot API calls to a
+// Chatwright Telegram Platform Emulator in a non-production environment).
+func BotHost() botHostInterface {
 	return botHost{}
 }
 
@@ -44,6 +53,43 @@ func (h botHost) GetHTTPClient(c context.Context) *http.Client {
 	//		Context: c,
 	//	},
 	//}
+}
+
+// botHostWithClient is a botHostInterface whose GetHTTPClient returns a
+// caller-supplied *http.Client instead of http.DefaultClient. Context()
+// behaves identically to botHost's.
+type botHostWithClient struct {
+	client *http.Client
+}
+
+// BotHostWithHTTPClient returns hosting platform settings & information whose
+// GetHTTPClient returns client instead of http.DefaultClient. This is the
+// seam a caller uses to redirect a bot's outbound HTTP calls — for example,
+// installing a TelegramRedirectTransport to point Bot API traffic at a
+// Chatwright emulator instead of https://api.telegram.org — without changing
+// anything else about how the host behaves. It does not alter BotHost(),
+// which keeps returning http.DefaultClient exactly as before.
+//
+// client must not be nil; callers that do not need a custom client should
+// call BotHost() instead.
+func BotHostWithHTTPClient(client *http.Client) botHostInterface {
+	if client == nil {
+		panic("bots-host-gae: client == nil")
+	}
+	return botHostWithClient{client: client}
+}
+
+// Context creates context for http.Request, identically to botHost.Context.
+func (h botHostWithClient) Context(r *http.Request) context.Context {
+	return appengine.NewContext(r)
+}
+
+// GetHTTPClient returns the *http.Client supplied to BotHostWithHTTPClient.
+func (h botHostWithClient) GetHTTPClient(c context.Context) *http.Client {
+	if c == nil {
+		panic("c == nil")
+	}
+	return h.client
 }
 
 //var DbProvider = func(c context.Context) (db dal.DB, err error) {
