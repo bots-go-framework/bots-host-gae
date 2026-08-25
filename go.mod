@@ -1,6 +1,6 @@
 module github.com/bots-go-framework/bots-host-gae
 
-go 1.22.3
+go 1.27.0
 
 //replace github.com/bots-go-framework/bots-fw => ../../bots-go-framework/bots-fw
 //
